@@ -4,7 +4,7 @@ from agno.storage.sqlite import SqliteStorage
 from agno.tools.yfinance import YFinanceTools
 from agno.models.google import Gemini
 agent = Agent(
-    model=Gemini(id="gemini-2.0-flash-exp", api_key='AIzaSyDWUk0f_nYQ2NDUHWKfmDquUbMeCozXs-g'),
+    model=Gemini(id="gemini-2.0-flash-exp", api_key='your api key'),
     tools=[YFinanceTools(stock_price=True, analyst_recommendations=True, stock_fundamentals=True)],
     description="You are an investment analyst that researches stock prices, analyst recommendations, and stock fundamentals.",
     instructions=["Format your response using markdown and use tables to display data where possible."],
